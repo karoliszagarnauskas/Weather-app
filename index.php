@@ -27,9 +27,20 @@
           <div class="weather">Sunny</div>
           <div class="hi-low">00°c / 00°c</div>
           <div class="suggestions">Suggested to wear:</div>
+          <?php
+
+          $sql = "SELECT * FROM items WHERE item_id=1;";
+          $result = mysqli_query($connection, $sql);
+          $resultCheck = mysqli_num_rows($result);
+          if ($resultCheck >0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo  $row['item'] . "<br>";
+            }
+          }
+           ?>
         </div>
       </main>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js "></script>
   </body>
 </html>

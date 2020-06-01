@@ -35,6 +35,21 @@ function displayResults(weather){
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = weather.weather[0].main;
+  // if (weather_el.innerText = "rain") {
+  //   console.log("pavyko");
+  // }else {
+  //   console.log("nepavyko");
+  // }
+  //   $sql = "SELECT * FROM items WHERE item_id=1;";
+  //   $result = mysqli_query($connection, $sql);
+  //   $resultCheck = mysqli_num_rows($result);
+  //   if ($resultCheck >0) {
+  //     while ($row = mysqli_fetch_assoc($result)) {
+  //       echo  $row['item'] . "<br>";
+  //     }
+  //   }
+  //
+  // }
 
   let hilow = document.querySelector('.hi-low');
   hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
