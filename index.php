@@ -27,7 +27,7 @@
           <div class="weather">Sunny</div>
           <div class="hi-low">00°c / 00°c</div>
           <div class="suggestions">Suggested to wear:</div>
-          <?php
+          <!-- <?php
 
           $sql = "SELECT * FROM items WHERE item_id=1;";
           $result = mysqli_query($connection, $sql);
@@ -37,7 +37,7 @@
               echo  $row['item'] . "<br>";
             }
           }
-           ?>
+           ?> -->
         </div>
       </main>
     </div>
